@@ -1,0 +1,108 @@
+.reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+}
+
+.reg-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-shadow: 3px 3px 20px #ff99cc,
+       -2px 1px 30px #ff99cc;
+}
+
+.reg-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: palevioletred;
+}
+
+.reg-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.reg-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.toggle-password {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+}
+
+.pass {
+    position: relative;
+}
+
+.pass input {
+    padding-right: 40px; 
+}
+
+.toggle-password::after {
+    content: attr(data-state);
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reg-form button {
+    width: 100%;
+    padding: 10px;
+    margin-left: -2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reg-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.reg-form input.error {
+    border-color: #dc3545;
+}
+
+.reg-form .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.login-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-sec .loginlink{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.login-sec a{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 18px;
+}

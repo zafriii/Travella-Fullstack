@@ -1,0 +1,192 @@
+.contact img {
+    height: 500px;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.contact h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+}
+
+.contact h3{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 40px;
+    height: 500px;
+    width: 500px;
+    margin-left: 30px;
+    color: black;
+    
+}
+
+.contact-inputs input {
+   padding: 10px 30px ;
+   width: 100%;
+   margin-top: 20px;
+   border: 2px solid #5d7cd1;
+   border-radius: 60px;
+   background-color: transparent;
+   color: black;
+   margin-left: 10px;
+   outline: none;
+   font-size: 18px;
+   
+}
+
+.contact-inputs textarea {
+
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #5d7cd1;
+     border-radius: 10px; 
+    background-color: transparent;
+    margin-left: 10px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+
+}
+ 
+.contact-inputs .submit{
+    background-color: #5d7cd1;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: black;
+}
+
+textarea::placeholder{
+    color: black;
+    margin-left: 50px;
+}
+
+@media (max-width:900px) {
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        
+    }
+
+    .contact h2{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 50px;
+        
+    }
+
+    .contact-inputs{
+        margin-top: 40px;
+    }
+
+    .contact-inputs input{
+        margin-left: 10px;
+    }
+
+    .contact-inputs textarea{
+        margin-left: 10px;
+    }
+
+    .contact img {
+       display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        
+    }
+
+    .contact h2{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 50px;
+        
+    }
+
+    .contact-inputs{
+        margin-top: 40px;
+    }
+
+    .contact-inputs input{
+        margin-left: -20px;
+    }
+
+    .contact-inputs textarea{
+        margin-left: -20px;
+    }
+
+    .contact img {
+       display: none;
+    }
+}
+
+@media (max-width:430px) {
+
+    .contact .phn{
+        margin-left: 50px;
+    }
+
+    .contact h3{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: -20px;
+    }    
+    .contact-inputs{
+       
+        height: 500px;
+        width: 380px;
+        margin-left: 10px;
+        
+        
+    }
+
+    .contact-inputs input{
+        margin-left: -10px;
+    }
+
+    .contact-inputs textarea{
+        margin-left: -10px;
+    }
+}
+
+@media (max-width:390px) {
+    .contact-inputs{
+       
+        padding: 40px;
+        height: 500px;
+        width: 350px;
+        margin-left: -2px;
+    }
+}

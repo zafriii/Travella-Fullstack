@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Macondo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poor+Story&family=Protest+Riot&family=Protest+Strike&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Dancing Script", cursive;
+    background-color: #5d7cd1;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(93, 124, 209, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+    
+}
+
+
+.nav-logo{
+    color: white;
+    font-size: 20px;  
+}
+
+.nav-logo a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-logo .logo-icon{
+  font-size: 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: "Protest Strike", sans-serif;
+    color: white;
+    font-size: 17px;
+    
+}
+
+.nav-links a:hover{
+    color: rgb(85, 83, 88);
+}
+
+.nav-icon{
+    font-size: 30px;
+    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.log-btns{
+  
+  background-color: palevioletred;
+  color: #5d7cd1;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+
+.log-btns:hover{
+  box-shadow: 3px 3px 20px #ff99cc,
+  -2px 1px 30px #ff99cc;
+}
+
+
+
+
+  
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  /* .open {
+    transform: rotate(45deg);
+  } */
+  
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #5d7cd1;
+      color: white;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      transition: all 2s;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links a {
+      margin-bottom: 1rem;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  }
+   
